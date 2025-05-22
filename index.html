@@ -19,7 +19,9 @@
     let img = document.getElementById('img');
     let text = document.getElementById('text');
       function generateqr(){
-         // img.src="https://api.qrserver.com/v1/create-qr-code/?size=150*150&data="*text.value;
+         if (text.value.trim() === "") {
+            alert("Please enter some text.");
+            return;
          img.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + text.value;
          
       }
