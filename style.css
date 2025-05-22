@@ -33,6 +33,9 @@ body{
 
 .img img{
 padding-bottom: 10px;
+max-width: 100%;   
+height: auto;       
+display: block;
 }
 
 button{
